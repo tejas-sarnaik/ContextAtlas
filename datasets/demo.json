@@ -1,0 +1,57 @@
+{
+  "query": "How is Aurora retrieval evaluated and what release criteria are used?",
+  "budget": 100,
+  "diversity": 0.65,
+  "chunks": [
+    {
+      "id": "A01",
+      "source": "System architecture",
+      "text": "The Aurora retrieval stack combines lexical BM25 retrieval with a vector index. The result merger deduplicates candidates before reranking."
+    },
+    {
+      "id": "A02",
+      "source": "Evaluation guide",
+      "text": "Aurora is evaluated with Recall at five, mean reciprocal rank, and answer citation coverage on a manually labeled question set."
+    },
+    {
+      "id": "A03",
+      "source": "Benchmark methodology",
+      "text": "The benchmark compares Aurora against a lexical-only baseline on the same held-out questions. It reports recall and MRR."
+    },
+    {
+      "id": "A04",
+      "source": "Evaluation guide copy",
+      "text": "Aurora is evaluated with Recall at five, mean reciprocal rank, and answer citation coverage on a manually labeled question set."
+    },
+    {
+      "id": "A05",
+      "source": "Release notes",
+      "text": "In version two, the Aurora team updated the CSS grid spacing, icons, and light mode palette in the dashboard."
+    },
+    {
+      "id": "A06",
+      "source": "Operations",
+      "text": "Aurora caches metadata locally and records a timestamp with every retrieved source. Queries are not uploaded by this demo."
+    },
+    {
+      "id": "A07",
+      "source": "Latency report",
+      "text": "The retrieval service budget allocates thirty milliseconds for lexical search and fifty milliseconds for reranking on its internal sample."
+    },
+    {
+      "id": "A08",
+      "source": "Unrelated note",
+      "text": "The kitchen inventory includes rice, tomatoes, lentils and cumin for next week."
+    },
+    {
+      "id": "A09",
+      "source": "Quality policy",
+      "text": "The release gate requires at least ninety percent citation coverage and Recall at five above eighty percent on the held-out set."
+    },
+    {
+      "id": "A10",
+      "source": "FAQ",
+      "text": "Aurora uses a hybrid search pipeline and evaluates retrieval with Recall at five and mean reciprocal rank."
+    }
+  ]
+}

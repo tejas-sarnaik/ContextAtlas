@@ -1,0 +1,352 @@
+{
+  "query": "How is Aurora retrieval evaluated and what release criteria are used?",
+  "budget": 100,
+  "diversity": 0.65,
+  "selected": [
+    {
+      "id": "A09",
+      "source": "Quality policy",
+      "text": "The release gate requires at least ninety percent citation coverage and Recall at five above eighty percent on the held-out set.",
+      "tokens": 24,
+      "relevance": 1.0,
+      "keywords": [
+        "release"
+      ],
+      "score": 0.21603,
+      "why": "Relevance 1.00 · new-term coverage 0.17 · overlap penalty 0.00",
+      "raw_bm25": 1.8745
+    },
+    {
+      "id": "A01",
+      "source": "System architecture",
+      "text": "The Aurora retrieval stack combines lexical BM25 retrieval with a vector index. The result merger deduplicates candidates before reranking.",
+      "tokens": 21,
+      "relevance": 0.99739,
+      "keywords": [
+        "aurora",
+        "retrieval"
+      ],
+      "score": 0.24311,
+      "why": "Relevance 1.00 · new-term coverage 0.33 · overlap penalty 0.00",
+      "raw_bm25": 1.8696
+    },
+    {
+      "id": "A04",
+      "source": "Evaluation guide copy",
+      "text": "Aurora is evaluated with Recall at five, mean reciprocal rank, and answer citation coverage on a manually labeled question set.",
+      "tokens": 23,
+      "relevance": 0.96439,
+      "keywords": [
+        "aurora",
+        "evaluated"
+      ],
+      "score": 0.17259,
+      "why": "Relevance 0.96 · new-term coverage 0.17 · overlap penalty 0.30",
+      "raw_bm25": 1.8077
+    },
+    {
+      "id": "A10",
+      "source": "FAQ",
+      "text": "Aurora uses a hybrid search pipeline and evaluates retrieval with Recall at five and mean reciprocal rank.",
+      "tokens": 18,
+      "relevance": 0.84172,
+      "keywords": [
+        "aurora",
+        "retrieval"
+      ],
+      "score": 0.18563,
+      "why": "Relevance 0.84 · new-term coverage 0.00 · overlap penalty 0.08",
+      "raw_bm25": 1.5778
+    }
+  ],
+  "baseline": [
+    {
+      "id": "A09",
+      "source": "Quality policy",
+      "text": "The release gate requires at least ninety percent citation coverage and Recall at five above eighty percent on the held-out set.",
+      "tokens": 24,
+      "relevance": 1.0,
+      "keywords": [
+        "release"
+      ],
+      "score": 0.21603,
+      "why": "Relevance 1.00 · new-term coverage 0.17 · overlap penalty 0.00",
+      "raw_bm25": 1.8745
+    },
+    {
+      "id": "A01",
+      "source": "System architecture",
+      "text": "The Aurora retrieval stack combines lexical BM25 retrieval with a vector index. The result merger deduplicates candidates before reranking.",
+      "tokens": 21,
+      "relevance": 0.99739,
+      "keywords": [
+        "aurora",
+        "retrieval"
+      ],
+      "score": 0.24311,
+      "why": "Relevance 1.00 · new-term coverage 0.33 · overlap penalty 0.00",
+      "raw_bm25": 1.8696
+    },
+    {
+      "id": "A02",
+      "source": "Evaluation guide",
+      "text": "Aurora is evaluated with Recall at five, mean reciprocal rank, and answer citation coverage on a manually labeled question set.",
+      "tokens": 23,
+      "relevance": 0.96439,
+      "keywords": [
+        "aurora",
+        "evaluated"
+      ],
+      "score": 0.0,
+      "why": "Not selected",
+      "raw_bm25": 1.8077
+    },
+    {
+      "id": "A04",
+      "source": "Evaluation guide copy",
+      "text": "Aurora is evaluated with Recall at five, mean reciprocal rank, and answer citation coverage on a manually labeled question set.",
+      "tokens": 23,
+      "relevance": 0.96439,
+      "keywords": [
+        "aurora",
+        "evaluated"
+      ],
+      "score": 0.17259,
+      "why": "Relevance 0.96 · new-term coverage 0.17 · overlap penalty 0.30",
+      "raw_bm25": 1.8077
+    }
+  ],
+  "rejected": [
+    {
+      "id": "A02",
+      "source": "Evaluation guide",
+      "text": "Aurora is evaluated with Recall at five, mean reciprocal rank, and answer citation coverage on a manually labeled question set.",
+      "tokens": 23,
+      "relevance": 0.96439,
+      "keywords": [
+        "aurora",
+        "evaluated"
+      ],
+      "score": 0.0,
+      "why": "Not selected",
+      "raw_bm25": 1.8077
+    },
+    {
+      "id": "A03",
+      "source": "Benchmark methodology",
+      "text": "The benchmark compares Aurora against a lexical-only baseline on the same held-out questions. It reports recall and MRR.",
+      "tokens": 24,
+      "relevance": 0.21096,
+      "keywords": [
+        "aurora"
+      ],
+      "score": 0.0,
+      "why": "Not selected",
+      "raw_bm25": 0.3954
+    },
+    {
+      "id": "A05",
+      "source": "Release notes",
+      "text": "In version two, the Aurora team updated the CSS grid spacing, icons, and light mode palette in the dashboard.",
+      "tokens": 23,
+      "relevance": 0.20432,
+      "keywords": [
+        "aurora"
+      ],
+      "score": 0.0,
+      "why": "Not selected",
+      "raw_bm25": 0.383
+    },
+    {
+      "id": "A06",
+      "source": "Operations",
+      "text": "Aurora caches metadata locally and records a timestamp with every retrieved source. Queries are not uploaded by this demo.",
+      "tokens": 21,
+      "relevance": 0.20432,
+      "keywords": [
+        "aurora"
+      ],
+      "score": 0.0,
+      "why": "Not selected",
+      "raw_bm25": 0.383
+    },
+    {
+      "id": "A07",
+      "source": "Latency report",
+      "text": "The retrieval service budget allocates thirty milliseconds for lexical search and fifty milliseconds for reranking on its internal sample.",
+      "tokens": 20,
+      "relevance": 0.61091,
+      "keywords": [
+        "retrieval"
+      ],
+      "score": 0.0,
+      "why": "Not selected",
+      "raw_bm25": 1.1451
+    },
+    {
+      "id": "A08",
+      "source": "Unrelated note",
+      "text": "The kitchen inventory includes rice, tomatoes, lentils and cumin for next week.",
+      "tokens": 15,
+      "relevance": 0.0,
+      "keywords": [],
+      "score": 0.0,
+      "why": "Not selected",
+      "raw_bm25": 0.0
+    }
+  ],
+  "all_chunks": [
+    {
+      "id": "A01",
+      "source": "System architecture",
+      "text": "The Aurora retrieval stack combines lexical BM25 retrieval with a vector index. The result merger deduplicates candidates before reranking.",
+      "tokens": 21,
+      "relevance": 0.99739,
+      "keywords": [
+        "aurora",
+        "retrieval"
+      ],
+      "score": 0.24311,
+      "why": "Relevance 1.00 · new-term coverage 0.33 · overlap penalty 0.00",
+      "raw_bm25": 1.8696
+    },
+    {
+      "id": "A02",
+      "source": "Evaluation guide",
+      "text": "Aurora is evaluated with Recall at five, mean reciprocal rank, and answer citation coverage on a manually labeled question set.",
+      "tokens": 23,
+      "relevance": 0.96439,
+      "keywords": [
+        "aurora",
+        "evaluated"
+      ],
+      "score": 0.0,
+      "why": "Not selected",
+      "raw_bm25": 1.8077
+    },
+    {
+      "id": "A03",
+      "source": "Benchmark methodology",
+      "text": "The benchmark compares Aurora against a lexical-only baseline on the same held-out questions. It reports recall and MRR.",
+      "tokens": 24,
+      "relevance": 0.21096,
+      "keywords": [
+        "aurora"
+      ],
+      "score": 0.0,
+      "why": "Not selected",
+      "raw_bm25": 0.3954
+    },
+    {
+      "id": "A04",
+      "source": "Evaluation guide copy",
+      "text": "Aurora is evaluated with Recall at five, mean reciprocal rank, and answer citation coverage on a manually labeled question set.",
+      "tokens": 23,
+      "relevance": 0.96439,
+      "keywords": [
+        "aurora",
+        "evaluated"
+      ],
+      "score": 0.17259,
+      "why": "Relevance 0.96 · new-term coverage 0.17 · overlap penalty 0.30",
+      "raw_bm25": 1.8077
+    },
+    {
+      "id": "A05",
+      "source": "Release notes",
+      "text": "In version two, the Aurora team updated the CSS grid spacing, icons, and light mode palette in the dashboard.",
+      "tokens": 23,
+      "relevance": 0.20432,
+      "keywords": [
+        "aurora"
+      ],
+      "score": 0.0,
+      "why": "Not selected",
+      "raw_bm25": 0.383
+    },
+    {
+      "id": "A06",
+      "source": "Operations",
+      "text": "Aurora caches metadata locally and records a timestamp with every retrieved source. Queries are not uploaded by this demo.",
+      "tokens": 21,
+      "relevance": 0.20432,
+      "keywords": [
+        "aurora"
+      ],
+      "score": 0.0,
+      "why": "Not selected",
+      "raw_bm25": 0.383
+    },
+    {
+      "id": "A07",
+      "source": "Latency report",
+      "text": "The retrieval service budget allocates thirty milliseconds for lexical search and fifty milliseconds for reranking on its internal sample.",
+      "tokens": 20,
+      "relevance": 0.61091,
+      "keywords": [
+        "retrieval"
+      ],
+      "score": 0.0,
+      "why": "Not selected",
+      "raw_bm25": 1.1451
+    },
+    {
+      "id": "A08",
+      "source": "Unrelated note",
+      "text": "The kitchen inventory includes rice, tomatoes, lentils and cumin for next week.",
+      "tokens": 15,
+      "relevance": 0.0,
+      "keywords": [],
+      "score": 0.0,
+      "why": "Not selected",
+      "raw_bm25": 0.0
+    },
+    {
+      "id": "A09",
+      "source": "Quality policy",
+      "text": "The release gate requires at least ninety percent citation coverage and Recall at five above eighty percent on the held-out set.",
+      "tokens": 24,
+      "relevance": 1.0,
+      "keywords": [
+        "release"
+      ],
+      "score": 0.21603,
+      "why": "Relevance 1.00 · new-term coverage 0.17 · overlap penalty 0.00",
+      "raw_bm25": 1.8745
+    },
+    {
+      "id": "A10",
+      "source": "FAQ",
+      "text": "Aurora uses a hybrid search pipeline and evaluates retrieval with Recall at five and mean reciprocal rank.",
+      "tokens": 18,
+      "relevance": 0.84172,
+      "keywords": [
+        "aurora",
+        "retrieval"
+      ],
+      "score": 0.18563,
+      "why": "Relevance 0.84 · new-term coverage 0.00 · overlap penalty 0.08",
+      "raw_bm25": 1.5778
+    }
+  ],
+  "optimized_metrics": {
+    "tokens": 86,
+    "utilization": 0.86,
+    "mean_relevance": 0.951,
+    "redundancy": 0.12,
+    "chunks": 4
+  },
+  "baseline_metrics": {
+    "tokens": 91,
+    "utilization": 0.91,
+    "mean_relevance": 0.982,
+    "redundancy": 0.251,
+    "chunks": 4
+  },
+  "assembled_context": "[A09] Quality policy\nThe release gate requires at least ninety percent citation coverage and Recall at five above eighty percent on the held-out set.\n\n[A01] System architecture\nThe Aurora retrieval stack combines lexical BM25 retrieval with a vector index. The result merger deduplicates candidates before reranking.\n\n[A04] Evaluation guide copy\nAurora is evaluated with Recall at five, mean reciprocal rank, and answer citation coverage on a manually labeled question set.\n\n[A10] FAQ\nAurora uses a hybrid search pipeline and evaluates retrieval with Recall at five and mean reciprocal rank.",
+  "limitations": [
+    "Token counts are estimates; use a model tokenizer before deployment.",
+    "Scores are lexical heuristics, not learned relevance or answer-faithfulness estimates.",
+    "No LLM is called and no generated answer quality is claimed."
+  ]
+}

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use ContextAtlas in a research artifact, please cite the repository."
+title: "ContextAtlas: An Explainable Context Budget Laboratory"
+authors:
+  - family-names: Sarnaik
+    given-names: Tejas
+version: 0.1.0
+date-released: 2026-10-18
+license: MIT
+repository-code: "https://github.com/tejas-sarnaik/ContextAtlas"
